@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img">
+  <defs>
+    <linearGradient id="docbg" x1="0" x2="1">
+      <stop offset="0" stop-color="#101011"/>
+      <stop offset="1" stop-color="#343438"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#docbg)"/>
+  <rect x="98" y="96" width="1004" height="560" rx="26" fill="#050505" stroke="#4d4d52"/>
+  <circle cx="424" cy="330" r="132" fill="#e8e8eb"/>
+  <path d="M272 610 C326 500 518 500 576 610 Z" fill="#e8e8eb"/>
+  <rect x="672" y="190" width="302" height="34" rx="17" fill="#ff6a00"/>
+  <rect x="672" y="268" width="380" height="22" rx="11" fill="#77777e"/>
+  <rect x="672" y="324" width="326" height="22" rx="11" fill="#5a5a60"/>
+  <rect x="672" y="380" width="356" height="22" rx="11" fill="#77777e"/>
+  <rect x="98" y="724" width="1004" height="82" rx="16" fill="#18181a"/>
+  <path d="M138 766 C190 708 224 822 278 766 C332 710 370 822 428 766 C488 706 520 826 584 766 C642 712 686 818 738 766 C796 708 834 824 898 766 C956 710 1000 808 1062 766" fill="none" stroke="#ff6a00" stroke-width="8"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img">
+  <defs>
+    <radialGradient id="event" cx="50%" cy="34%" r="70%">
+      <stop offset="0" stop-color="#ff6a00"/>
+      <stop offset="0.32" stop-color="#362013"/>
+      <stop offset="1" stop-color="#050505"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#event)"/>
+  <rect x="126" y="120" width="948" height="430" rx="26" fill="#101012" stroke="#5a5a60"/>
+  <rect x="180" y="174" width="840" height="322" rx="18" fill="#f5f5f7" opacity="0.1"/>
+  <rect x="220" y="222" width="292" height="226" rx="18" fill="#ff6a00"/>
+  <rect x="548" y="222" width="432" height="92" rx="18" fill="#f5f5f7"/>
+  <rect x="548" y="356" width="300" height="92" rx="18" fill="#36363b"/>
+  <path d="M170 700 L360 550 L540 700" fill="none" stroke="#f5f5f7" stroke-width="14" stroke-linecap="round"/>
+  <path d="M660 700 L840 550 L1030 700" fill="none" stroke="#ff6a00" stroke-width="14" stroke-linecap="round"/>
+  <rect x="90" y="760" width="1020" height="18" rx="9" fill="#3a3a40"/>
+  <rect x="90" y="760" width="620" height="18" rx="9" fill="#ff6a00"/>
+</svg>

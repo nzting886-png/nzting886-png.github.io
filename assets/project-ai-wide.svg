@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+  <defs>
+    <linearGradient id="aiw" x1="0" x2="1">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="0.72" stop-color="#1c1c20"/>
+      <stop offset="1" stop-color="#ff6a00"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#aiw)"/>
+  <rect x="96" y="110" width="660" height="500" rx="28" fill="#f5f5f7"/>
+  <rect x="804" y="110" width="700" height="500" rx="28" fill="#111113" stroke="#505056"/>
+  <rect x="858" y="164" width="250" height="392" rx="18" fill="#ff6a00"/>
+  <rect x="1134" y="164" width="316" height="176" rx="18" fill="#2d2d32"/>
+  <rect x="1134" y="380" width="316" height="176" rx="18" fill="#f5f5f7" opacity="0.16"/>
+  <path d="M150 700 H1450" stroke="#3a3a40" stroke-width="22" stroke-linecap="round"/>
+  <path d="M150 700 H930" stroke="#ff6a00" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="930" cy="700" r="34" fill="#f5f5f7"/>
+  <text x="100" y="810" fill="#f5f5f7" font-size="42" font-family="Arial, sans-serif" font-weight="700">AI VISUAL WORKFLOW</text>
+  <text x="100" y="858" fill="#a0a0a6" font-size="22" font-family="Arial, sans-serif">prompt frames / edit rhythm / subtitle package / platform output</text>
+</svg>
