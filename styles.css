@@ -481,6 +481,9 @@ img {
   font-size: clamp(34px, 5vw, 72px);
   font-weight: 780;
   line-height: 0.98;
+  overflow-wrap: normal;
+  text-wrap: balance;
+  word-break: keep-all;
 }
 
 .video-frame.small .cover-type {
@@ -488,7 +491,9 @@ img {
 }
 
 .video-frame.small .cover-type strong {
-  font-size: clamp(28px, 3vw, 42px);
+  max-width: 92%;
+  font-size: clamp(24px, 2.6vw, 38px);
+  line-height: 1.02;
 }
 
 .project-body {
@@ -666,6 +671,12 @@ img {
   font-size: clamp(22px, 2vw, 30px);
   font-weight: 740;
   line-height: 1.18;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.index-card span {
+  white-space: nowrap;
 }
 
 .process-band {
@@ -994,6 +1005,15 @@ img {
 
   .project img {
     min-height: 250px;
+  }
+
+  .cover-type strong {
+    max-width: 96%;
+    font-size: clamp(30px, 10vw, 52px);
+  }
+
+  .video-frame.small .cover-type strong {
+    font-size: clamp(24px, 8vw, 38px);
   }
 
   .case-section,

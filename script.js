@@ -2,6 +2,8 @@ const header = document.querySelector("[data-header]");
 const playButton = document.querySelector("[data-play]");
 const modal = document.querySelector("[data-modal]");
 const closeButton = document.querySelector("[data-close]");
+const modalVideo = document.querySelector("[data-modal-video]");
+const modalTitle = document.querySelector("[data-modal-title]");
 const revealItems = document.querySelectorAll(".reveal");
 const videoTriggers = document.querySelectorAll("[data-video]");
 const coverVideos = document.querySelectorAll(".video-frame video");
@@ -11,14 +13,26 @@ const updateHeader = () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 24);
 };
 
-const openModal = () => {
+const openModal = ({ src = "", title = "Portfolio reel", returnFocus = playButton } = {}) => {
+  activeTrigger = returnFocus;
+  if (modalVideo && src) {
+    modalVideo.src = src;
+    modalVideo.load();
+  }
+  if (modalTitle) modalTitle.textContent = title;
   modal.classList.add("is-open");
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
+  modalVideo?.play().catch(() => {});
   closeButton.focus();
 };
 
 const closeModal = () => {
+  if (modalVideo) {
+    modalVideo.pause();
+    modalVideo.removeAttribute("src");
+    modalVideo.load();
+  }
   modal.classList.remove("is-open");
   modal.setAttribute("aria-hidden", "true");
   document.body.classList.remove("modal-open");
@@ -55,6 +69,10 @@ if (playButton && modal && closeButton) {
   });
 }
 
+modalVideo?.addEventListener("error", () => {
+  modalTitle.textContent = `${modalTitle.textContent || "作品"} · 预览视频待接入`;
+});
+
 videoTriggers.forEach((trigger) => {
   if (trigger.tagName !== "BUTTON") {
     trigger.tabIndex = 0;
@@ -77,6 +95,12 @@ videoTriggers.forEach((trigger) => {
 });
 
 coverVideos.forEach((video) => {
+  if (!video.poster && video.currentSrc) {
+    video.poster = video.currentSrc.replace(/\.mp4(?:$|\?.*)/, ".jpg");
+  } else if (!video.poster) {
+    video.poster = video.getAttribute("src")?.replace(/\.mp4(?:$|\?.*)/, ".jpg") || "";
+  }
+
   video.addEventListener(
     "loadedmetadata",
     () => {
